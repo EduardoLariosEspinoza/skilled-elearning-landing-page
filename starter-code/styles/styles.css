@@ -1,0 +1,396 @@
+:root {
+  --Gradient-1: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  --Gradient-1-Hover: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+
+  --Gradient-2: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
+  --Gradient-2-Hover: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+
+  --666CA3: #666ca3;
+  --13183F: #13183f;
+  --83869A: #83869a;
+  --F74780: #f74780;
+  --FFA7C3: #ffa7c3;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-style: normal;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.37rem 0 0.44rem;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 1.63rem;
+}
+
+a:hover {
+  cursor: pointer;
+  color: var(--FFA7C3);
+}
+
+footer {
+  width: 100%;
+  height: 7.5rem;
+  flex-shrink: 0;
+  background-color: var(--13183F);
+  padding: 2.25rem 1rem;
+}
+
+#card {
+  padding: 1rem 1rem 5rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
+}
+
+#button1 {
+  background: var(--13183F, #13183f);
+  position: relative;
+  z-index: 9999;
+}
+
+#button1:hover {
+  cursor: pointer;
+  background: var(--666CA3);
+}
+
+#button2 {
+  border-radius: 1.96875rem;
+  background: var(--Gradient-1);
+  width: 10.4375rem;
+  height: 3.5rem;
+  flex-shrink: 0;
+}
+
+#button2:hover {
+  cursor: pointer;
+  background: var(--Gradient-1-Hover);
+}
+
+#button3 {
+  background: var(--Gradient-2);
+}
+
+#button3:hover {
+  cursor: pointer;
+  background: var(--Gradient-2-Hover);
+}
+
+#intro-div {
+  width: 100%;
+  margin-top: 2.38rem;
+}
+
+#intro-p {
+  margin-bottom: 1.5rem;
+}
+
+#img-mobile {
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+#img-tablet,
+#img-desktop {
+  display: none;
+}
+
+#info-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+#info-div-main {
+  width: 100%;
+  height: 7.5rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: var(
+    --Gradient-1,
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)
+  );
+  padding: 1.5rem 1.81rem 2rem 1.75rem;
+}
+
+#footer-div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 5.56rem;
+  height: 2.19rem;
+  padding: 0.5rem 0 0.2rem 0;
+}
+
+.info-courses-div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 16.1875rem;
+  width: 100%;
+  border-radius: 0.625rem;
+  background: var(--FFFFFF, #fff);
+  box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+  position: relative;
+  padding: 0 1.81rem 2rem 1.75rem;
+}
+
+.info-courses-div > img {
+  width: min-content;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.info-courses-div > img,
+.info-courses-div > p,
+.info-courses-div > a,
+.info-courses-div > h4 {
+  position: relative;
+
+  top: -1.5rem;
+}
+
+.heading {
+  font-feature-settings: "clig" off, "liga" off;
+  font-weight: 800;
+}
+
+.heading-xl {
+  color: var(--13183F);
+  font-size: 2.5rem;
+  line-height: normal;
+}
+
+.heading-l {
+  color: var(--13183F);
+  font-size: 2rem;
+  line-height: normal;
+}
+
+.heading-m {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: white;
+}
+
+.heading-s {
+  color: var(--13183F);
+  font-size: 1.25rem;
+  line-height: normal;
+}
+
+.body {
+  font-feature-settings: "clig" off, "liga" off;
+  color: var(--83869A);
+  line-height: 1.625rem;
+}
+
+.body-m {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.body-get-started {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--F74780);
+  line-height: 1.75rem;
+}
+
+.info-a {
+  margin-top: 0.5rem;
+}
+
+/* Los botones tambien deben de tener la clase body-m, la clase body no se debe usar */
+.button {
+  border-radius: 1.75rem;
+  width: 8.75rem;
+  height: 3rem;
+  flex-shrink: 0;
+  color: white;
+  line-height: 1.625rem;
+  border: none;
+}
+
+@media screen and (min-width: 726px) and (max-width: 1024px) {
+  h1 {
+    margin-bottom: 0;
+  }
+
+  footer {
+    padding: 2.25rem 2.44rem 2.25rem 2.5rem;
+  }
+
+  #card {
+    padding: 1.5rem 2.5rem 5rem 2.44rem;
+  }
+
+  #intro-div {
+    align-self: flex-start;
+    display: flex;
+    width: 24.875rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5625rem;
+    margin-top: 6.19rem;
+    margin-bottom: 11.63rem;
+  }
+
+  #intro-p {
+    margin-bottom: 0;
+  }
+
+  #img-tablet {
+    display: inline-block;
+    width: auto;
+    position: absolute;
+    top: -5.5rem;
+    right: -19rem;
+  }
+
+  #img-mobile,
+  #img-desktop {
+    margin-top: 0;
+    display: none;
+  }
+
+  #info-div {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.5rem;
+  }
+
+  #info-div-main {
+    width: 21.1875rem;
+    height: 16.1875rem;
+    padding: 3.5rem 1.31rem 0 2rem;
+  }
+
+  .info-courses-div {
+    width: 21.25rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  footer {
+    padding: 2rem 10.31rem 2rem 10.36rem;
+  }
+
+  #card {
+    justify-content: space-around;
+    padding: 1.5rem 10.31rem 8.75rem 10.31rem;
+  }
+
+  #intro-div {
+    align-self: flex-start;
+    display: flex;
+    width: 50%;
+    min-width: 28.5625rem;
+    height: 22.4375rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.81rem;
+    margin: 10.75rem 0 15.62rem 0;
+  }
+
+  #img-desktop {
+    display: inline-block;
+    width: 58.31rem;
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: -6.8rem;
+    right: -19rem;
+  }
+
+  #img-mobile,
+  #img-tablet {
+    margin-top: 0;
+    display: none;
+  }
+
+  #info-div {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(21.875rem, 30vw));
+    grid-template-rows: repeat(2, minmax(auto, 20.125rem));
+    row-gap: 5rem;
+    column-gap: 1.88rem;
+  }
+
+  #info-div-main {
+    width: 100%;
+    height: 100%;
+    padding: 4rem 2rem 0 2rem;
+  }
+
+  .info-courses-div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    height: 100%;
+    padding: 4 2rem 2.5rem 2rem;
+  }
+
+  .heading {
+    font-weight: 800;
+  }
+
+  .heading-xl {
+    font-size: 3.5rem;
+  }
+
+  .heading-l {
+    font-size: 2.5rem;
+  }
+
+  .heading-m {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .heading-s {
+    font-size: 1.5rem;
+  }
+
+  .body {
+    line-height: 1.75rem;
+  }
+
+  .body-m {
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+
+  .body-s {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
